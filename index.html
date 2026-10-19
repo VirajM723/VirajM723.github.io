@@ -3,1144 +3,569 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Viraj Mankani | Software Engineer • Distributed Systems & Applied AI</title>
-  
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Portfolio of Viraj Mankani, Computer Science student at NIT Trichy. Software engineer specializing in high-throughput backend microservices, distributed cloud systems, and applied AI infrastructure.">
+  <title>Viraj Mankani | Software Engineer</title>
+  <meta name="description" content="Viraj Mankani, Computer Science student at NIT Trichy. Backend and distributed systems engineer working on async microservices, cloud infrastructure and applied AI.">
   <meta name="keywords" content="Viraj Mankani, Software Engineer, Backend Developer, Distributed Systems, FastAPI, Redis, ChromaDB, SISA Machine Unlearning, NIT Trichy, Portfolio">
   <meta name="author" content="Viraj Mankani">
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Viraj Mankani | Software Engineer Portfolio">
-  <meta property="og:description" content="High-throughput distributed systems, asynchronous backends, and applied AI infrastructure.">
+  <meta property="og:title" content="Viraj Mankani | Software Engineer">
+  <meta property="og:description" content="Backends, distributed systems and applied AI. CSE at NIT Trichy '27.">
   <meta property="og:type" content="website">
 
-  <!-- Stylesheet -->
+  <link rel="preload" href="assets/fonts/satoshi-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23533afd'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='700' font-size='52'>VM</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%237000ff'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='600' font-size='44'>VM</text></svg>">
 </head>
 <body>
 
-  <!-- ========================================================================
-       TOP NAVIGATION (Stripe nav-bar-on-mesh)
-       ======================================================================== -->
-  <header class="site-header" id="siteHeader">
-    <div class="container nav-inner">
-      <a href="#overview" class="nav-brand" id="brandLogoLink">
-        <div class="nav-brand-logo">VM</div>
-        <span class="nav-brand-title">Viraj Mankani</span>
-      </a>
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-row">
+      <a href="#top" class="nav-name">Viraj Mankani</a>
+      <p class="nav-note">CSE at <span class="accent">NIT Trichy</span> '27</p>
+      <p class="nav-note nav-place">Mumbai, India</p>
 
-      <nav>
-        <ul class="nav-links" id="navLinksList">
-          <li><a href="#overview" class="nav-link active">Overview</a></li>
-          <li><a href="#metrics" class="nav-link">Honors</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#leadership" class="nav-link">Leadership</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-        </ul>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#experience">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <button type="button" class="nav-resume" data-open-docs>Resume</button>
+        <a href="#contact">Let's Talk</a>
       </nav>
 
-      <div class="nav-actions">
-        <!-- Social Icons -->
-        <a href="https://github.com/VirajM723" target="_blank" rel="noopener noreferrer" class="nav-social-icon" title="GitHub Profile" id="navGithubLink">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/viraj-mankani-258296260/" target="_blank" rel="noopener noreferrer" class="nav-social-icon" title="LinkedIn Profile" id="navLinkedinLink">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
-        </a>
-        
-        <!-- Primary Pill Button -->
-        <button type="button" class="button-primary-pill" id="openResumeModalBtn">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-          Resume
-        </button>
-
-        <button class="mobile-menu-toggle" id="mobileToggleBtn" aria-label="Toggle menu">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        </button>
-      </div>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <svg class="icon-menu" width="28" height="17" viewBox="0 0 28 17" fill="none" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M26.7 2a1 1 0 0 1-1 1H9.3a1 1 0 1 1 0-2h16.4a1 1 0 0 1 1 1Zm0 7a1 1 0 0 1-1 1H4.1a1 1 0 1 1 0-2h21.6a1 1 0 0 1 1 1Zm0 7a1 1 0 0 1-1 1H9.3a1 1 0 1 1 0-2h16.4a1 1 0 0 1 1 1Z" fill="currentColor"/></svg>
+        <svg class="icon-close" width="17" height="16" viewBox="0 0 17 16" fill="none" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8 15.2a1 1 0 0 1-1.4 0L1.3 2A1 1 0 1 1 2.7.6l13.1 13.1a1 1 0 0 1 0 1.5Z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M1.3 15.2a1 1 0 0 0 1.4 0L15.8 2A1 1 0 1 0 14.4.6L1.3 13.7a1 1 0 0 0 0 1.5Z" fill="currentColor"/></svg>
+      </button>
     </div>
   </header>
 
-  <main>
-    <!-- ========================================================================
-         HERO SECTION WITH ATMOSPHERIC GRADIENT MESH
-         ======================================================================== -->
-    <section class="hero-section" id="overview">
-      <!-- Iconic Stripe Atmospheric Gradient Mesh Backdrop -->
-      <div class="stripe-mesh-backdrop" aria-hidden="true">
-        <div class="stripe-mesh-blob blob-cream"></div>
-        <div class="stripe-mesh-blob blob-lemon"></div>
-        <div class="stripe-mesh-blob blob-lavender"></div>
-        <div class="stripe-mesh-blob blob-indigo"></div>
-        <div class="stripe-mesh-blob blob-ruby"></div>
-        <div class="stripe-mesh-blob blob-magenta"></div>
-      </div>
+  <main id="top">
 
-      <div class="container hero-grid">
-        <!-- Left: Hero Headline & Value Proposition -->
-        <div class="hero-content">
-          <div class="hero-eyebrow">
-            <span class="pill-tag-soft">
-              <span class="status-dot"></span>
-              NIT TRICHY '27 • COMPUTER SCIENCE & ENGINEERING
-            </span>
-          </div>
-
-          <h1 class="display-xxl hero-title">
-            Engineering high-throughput distributed systems & applied AI infrastructure.
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-head">
+          <h1 class="hero-title">
+            <span class="hero-line">Software Engineer</span>
+            <span class="hero-line"><span class="scribble">Backend<svg viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M3 15c38-7 77-10 117-8 33 2 59 7 92 6 29-1 55-6 85-9" /></svg></span> &amp; Applied AI</span>
           </h1>
 
-          <p class="body-lg hero-subtitle">
-            Hi, I'm <strong>Viraj Mankani</strong>, Software Engineer specializing in asynchronous backend architectures, low-latency microservices, vector search pipelines, and cloud-native infrastructure.
-          </p>
-
-          <div class="hero-cta-group">
-            <a href="#projects" class="button-primary-pill" id="heroExploreProjectsBtn">
-              Explore Projects
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </a>
-            <a href="virajMankaniResume.pdf" target="_blank" class="button-secondary" id="heroDownloadResumeBtn">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              Download Resume (PDF)
-            </a>
-          </div>
-
-          <!-- Quick contact & verified channels -->
-          <div class="hero-quick-meta">
-            <a href="mailto:mankaniviraj55@gmail.com" class="hero-meta-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              mankaniviraj55@gmail.com
-            </a>
-            <a href="tel:+918591410685" class="hero-meta-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              +91 8591410685
-            </a>
-            <span class="hero-meta-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Mumbai, India
-            </span>
-          </div>
+          <a href="#experience" class="circle-arrow" aria-label="Skip to experience">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.7 1.9 1.9 21.7m0 0V1.9m0 19.8h19.8" /></svg>
+          </a>
         </div>
 
-        <!-- Right: Composited Stripe Floating Status Card -->
-        <div class="hero-interactive-card">
-          <div class="hero-card-header">
-            <div class="hero-card-identity">
-              <div class="hero-card-avatar">VM</div>
-              <div>
-                <div class="hero-card-name">Viraj Mankani</div>
-                <div class="hero-card-role">Backend & Distributed Systems</div>
-              </div>
-            </div>
-            <span class="pill-tag-soft"><span class="status-dot"></span> Open to Opportunities</span>
-          </div>
-
-          <div class="hero-stats-mini-grid">
-            <div class="hero-stat-box">
-              <div class="hero-stat-label">JEE Main AIR</div>
-              <div class="hero-stat-value tabular-num">950</div>
-              <div class="hero-stat-sub">Top 0.06% / 16 Lakhs</div>
-            </div>
-            <div class="hero-stat-box">
-              <div class="hero-stat-label">MHT-CET Rank</div>
-              <div class="hero-stat-value tabular-num">State Rank 1</div>
-              <div class="hero-stat-sub">Across Maharashtra</div>
-            </div>
-            <div class="hero-stat-box">
-              <div class="hero-stat-label">Total DSA Solved</div>
-              <div class="hero-stat-value tabular-num">500+</div>
-              <div class="hero-stat-sub">LeetCode & GFG</div>
-            </div>
-            <div class="hero-stat-box">
-              <div class="hero-stat-label">Codeforces</div>
-              <div class="hero-stat-value tabular-num">1303</div>
-              <div class="hero-stat-sub">Peak Rating</div>
-            </div>
-          </div>
-
-          <div class="hero-live-pill-track">
-            <span><strong>Tech Focus:</strong> Python, FastAPI, Redis, Docker, AWS</span>
-            <a href="#projects" class="link-on-light" style="font-size: 12px;">View Projects →</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         METRICS & HONORS TICKER (Tabular Numerics Band)
-         ======================================================================== -->
-    <section class="metrics-ribbon-section" id="metrics">
-      <div class="container">
-        <div class="metrics-grid">
-          <!-- Metric 1: JEE -->
-          <div class="metric-card">
-            <div>
-              <div class="metric-eyebrow">National Standing</div>
-              <div class="metric-number tabular-num metric-highlight">AIR 950</div>
-            </div>
-            <div class="metric-caption">
-              Joint Entrance Examination (JEE) out of <strong>1.6 Million (16 Lakh)</strong> candidates nationwide.
-            </div>
-          </div>
-
-          <!-- Metric 2: MHT-CET -->
-          <div class="metric-card">
-            <div>
-              <div class="metric-eyebrow">State Rank</div>
-              <div class="metric-number tabular-num metric-highlight">Rank 1</div>
-            </div>
-            <div class="metric-caption">
-              MHT-CET <strong>State Rank 1</strong> across the entire state of Maharashtra.
-            </div>
-          </div>
-
-          <!-- Metric 3: Sustained RPS -->
-          <div class="metric-card">
-            <div>
-              <div class="metric-eyebrow">Throughput</div>
-              <div class="metric-number tabular-num">1,000 <span style="font-size: 16px; font-weight: 400;">RPS</span></div>
-            </div>
-            <div class="metric-caption">
-              Sustained on NginZ distributed API gateway with Redis token bucket rate-limiting.
-            </div>
-          </div>
-
-          <!-- Metric 4: Latency -->
-          <div class="metric-card">
-            <div>
-              <div class="metric-eyebrow">Response Time</div>
-              <div class="metric-number tabular-num">25<span style="font-size: 16px; font-weight: 400;">ms</span></div>
-            </div>
-            <div class="metric-caption">
-              p95 latency achieved at Tata Communications via multi-tier Redis cache-aside (down from 180ms).
-            </div>
-          </div>
-
-          <!-- Metric 5: Embeddings -->
-          <div class="metric-card">
-            <div>
-              <div class="metric-eyebrow">Vector Scale</div>
-              <div class="metric-number tabular-num">5M+</div>
-            </div>
-            <div class="metric-caption">
-              ChromaDB embeddings indexed for semantic RAG retrieval at Lyceum Development Centre.
-            </div>
-          </div>
-
-          <!-- Metric 6: Competitive Coding -->
-          <div class="metric-card">
-            <div>
-              <div class="metric-eyebrow">Problem Solving</div>
-              <div class="metric-number tabular-num">500+ <span style="font-size: 16px; font-weight: 400;">DSA</span></div>
-            </div>
-            <div class="metric-caption">
-              Solved across LeetCode & GFG; <strong>1303 peak rating</strong> on Codeforces.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         WORK EXPERIENCE SECTION (Stripe card-feature-light)
-         ======================================================================== -->
-    <section class="experience-section" id="experience">
-      <div class="container">
-        <div class="section-header-centered">
-          <span class="pill-tag-soft section-eyebrow">Industry Track Record</span>
-          <h2 class="display-lg section-title">Professional Experience</h2>
-          <p class="section-desc">
-            Proven contributions in enterprise cloud infrastructure, high-throughput backend services, and scalable applied AI.
-          </p>
-        </div>
-
-        <div class="experience-grid">
-          <!-- Role 1: Tata Communications -->
-          <article class="experience-card">
-            <div class="exp-header">
-              <div class="exp-company-block">
-                <div class="exp-company-logo tata">TC</div>
-                <div>
-                  <h3 class="exp-title">Tata Communications</h3>
-                  <div class="exp-company-meta">
-                    <strong>Project Trainee, Software Engineering (Backend & Cloud Infrastructure)</strong>
-                    <span>•</span>
-                    <span>Mumbai, India</span>
-                  </div>
-                </div>
-              </div>
-
-              <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-                <span class="exp-period-badge tabular-num">May 2026 – July 2026</span>
-                <a href="https://drive.google.com/file/d/1CmJV75EqSHUkfnQb5CkXrf2AnQKfeOMx/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="button-ghost" title="View Certificate">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5l9-9l-9-9l2 5l-7 4z"/></svg>
-                  Certificate ↗
-                </a>
-              </div>
-            </div>
-
-            <div class="exp-bullets-list">
-              <div class="exp-bullet-item">
-                <div class="exp-bullet-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-                </div>
-                <div class="exp-bullet-content">
-                  <strong>High-Throughput Enterprise Backend Microservices:</strong> Architected an asynchronous core backend platform in Python and FastAPI using non-blocking event loops, dependency injection (<code>Depends</code>), and Pydantic v2 data contracts; engineered Async SQLAlchemy 2.0 connection pooling and PostgreSQL schema design across 30+ asynchronous REST APIs, powering central auth (OAuth2/OIDC SSO) and resource coordination across 8 internal applications for 100+ daily enterprise users.
-                </div>
-              </div>
-
-              <div class="exp-bullet-item">
-                <div class="exp-bullet-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-                </div>
-                <div class="exp-bullet-content">
-                  <strong>Distributed Event Processing, Caching & Idempotency:</strong> Engineered an asynchronous distributed event and background task processing engine using Redis and asyncio, implementing distributed locks, idempotency keys, dead-letter queues, and automated exponential-backoff retries; built a Redis multi-tier cache-aside layer with selective TTL invalidation, slashing database query load by <strong>60%</strong> and reducing p95 API response latency from <strong>180ms to 25ms</strong>.
-                </div>
-              </div>
-
-              <div class="exp-bullet-item">
-                <div class="exp-bullet-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-                </div>
-                <div class="exp-bullet-content">
-                  <strong>ASGI Middleware, Observability & Reliable CI/CD:</strong> Implemented custom FastAPI ASGI middleware for distributed <code>X-Correlation-ID</code> request tracing, token bucket tenant rate-limiting, and structured JSON telemetry integrated with Prometheus and Grafana dashboards; authored zero-downtime asynchronous Alembic database migration pipelines and built a comprehensive test suite with pytest-asyncio achieving <strong>92% code coverage</strong> on GitLab CI/CD pipelines.
-                </div>
-              </div>
-            </div>
-
-            <div class="exp-tech-tags">
-              <span class="tech-tag">FastAPI</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Asyncio</span>
-              <span class="tech-tag">Redis (Cache-Aside & Locks)</span>
-              <span class="tech-tag">PostgreSQL</span>
-              <span class="tech-tag">Async SQLAlchemy 2.0</span>
-              <span class="tech-tag">Alembic</span>
-              <span class="tech-tag">Prometheus & Grafana</span>
-              <span class="tech-tag">GitLab CI/CD</span>
-              <span class="tech-tag">Pytest-Asyncio</span>
-            </div>
-          </article>
-
-          <!-- Role 2: Lyceum Development Centre -->
-          <article class="experience-card">
-            <div class="exp-header">
-              <div class="exp-company-block">
-                <div class="exp-company-logo lyceum">LD</div>
-                <div>
-                  <h3 class="exp-title">Lyceum Development Centre</h3>
-                  <div class="exp-company-meta">
-                    <strong>Machine Learning Intern (Applied AI, RAG & Vector Systems)</strong>
-                    <span>•</span>
-                    <span>Chennai, India</span>
-                  </div>
-                </div>
-              </div>
-
-              <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
-                <span class="exp-period-badge tabular-num">May 2025 – July 2025</span>
-                <a href="https://drive.google.com/file/d/1U083nkmuZIxC8eGDRBNmCt7wjAFwEcvc/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="button-ghost" title="View Certificate">
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15l-2 5l9-9l-9-9l2 5l-7 4z"/></svg>
-                  Certificate ↗
-                </a>
-              </div>
-            </div>
-
-            <div class="exp-bullets-list">
-              <div class="exp-bullet-item">
-                <div class="exp-bullet-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-                </div>
-                <div class="exp-bullet-content">
-                  <strong>RFP Parsing & Intelligent Document Ingestion:</strong> Built automated regex-based data extraction pipelines in Python processing <strong>300+ multi-page enterprise RFP documents per month</strong> into structured JSON schemas, eliminating manual proposal processing overhead by <strong>80%</strong>.
-                </div>
-              </div>
-
-              <div class="exp-bullet-item">
-                <div class="exp-bullet-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-                </div>
-                <div class="exp-bullet-content">
-                  <strong>Vector Database & Semantic Retrieval Infrastructure:</strong> Architected and scaled ChromaDB vector database infrastructure holding <strong>5M+ text embeddings</strong>, powering a LangChain RAG pipeline over historical pricing and occupancy datasets to improve predictive accuracy by <strong>20%</strong> and reduce document processing latency <strong>6x</strong>.
-                </div>
-              </div>
-
-              <div class="exp-bullet-item">
-                <div class="exp-bullet-icon">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
-                </div>
-                <div class="exp-bullet-content">
-                  <strong>LLM-Powered RAG Application & Real-Time Inference:</strong> Deployed a production FAQ search service across <strong>1,800+ question-answer pairs</strong> using LangChain and transformer embeddings, sustaining <strong>sub-3s query latency</strong> and <strong>95% retrieval precision</strong>, and shipped an interactive Gradio dashboard that cut client turnaround time from 3 hours to 30 minutes.
-                </div>
-              </div>
-            </div>
-
-            <div class="exp-tech-tags">
-              <span class="tech-tag">ChromaDB (5M+ Embeddings)</span>
-              <span class="tech-tag">LangChain</span>
-              <span class="tech-tag">RAG Architecture</span>
-              <span class="tech-tag">Transformers</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Gradio</span>
-              <span class="tech-tag">Vector Search</span>
-              <span class="tech-tag">Document ETL</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         TECHNICAL PROJECTS SHOWCASE (With GitHub Links & Filter Controls)
-         ======================================================================== -->
-    <section class="projects-section" id="projects">
-      <div class="container">
-        <div class="section-header-centered">
-          <span class="pill-tag-soft section-eyebrow">Engineered Deployments</span>
-          <h2 class="display-lg section-title">Featured Technical Projects</h2>
-          <p class="section-desc">
-            Production-grade systems, cloud architecture deployments, and applied machine learning models with open-source repositories.
-          </p>
-        </div>
-
-        <!-- Filter Controls -->
-        <div class="filter-controls">
-          <button type="button" class="filter-btn active" data-filter="all">All Projects (6)</button>
-          <button type="button" class="filter-btn" data-filter="cloud">Distributed Systems & Cloud (2)</button>
-          <button type="button" class="filter-btn" data-filter="ai">Applied AI & ML (2)</button>
-          <button type="button" class="filter-btn" data-filter="fullstack">Full-Stack & Platforms (2)</button>
-        </div>
-
-        <!-- Projects Grid -->
-        <div class="projects-grid" id="projectsContainer">
-
-          <!-- Project 1: NginZ -->
-          <article class="project-card" data-category="cloud">
-            <div>
-              <div class="project-card-header">
-                <div>
-                  <div class="project-category-badge">Distributed Systems & Cloud</div>
-                  <h3 class="project-title">NginZ – Distributed Cloud-Native API Gateway</h3>
-                </div>
-                <a href="https://github.com/VirajM723/Nginz-API-Gateway" target="_blank" rel="noopener noreferrer" class="project-github-btn" title="View GitHub Repository">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                </a>
-              </div>
-
-              <div class="project-metric-pill-row">
-                <span class="project-metric-item">Throughput: <span>1,000 RPS</span></span>
-                <span class="project-metric-item">•</span>
-                <span class="project-metric-item">Nodes: <span>10 Docker Instances</span></span>
-                <span class="project-metric-item">•</span>
-                <span class="project-metric-item">Auth: <span>Zero Downtime JWT</span></span>
-              </div>
-
-              <ul class="project-desc-list">
-                <li class="project-desc-item">
-                  Architected a distributed cloud-native API gateway on Nginx and Node.js/Express, coordinating 10 Dockerized instances with automatic Redis-backed service discovery, SIGTERM graceful deregistration, and zero downtime during simulated central auth outages via local JWT validation.
-                </li>
-                <li class="project-desc-item">
-                  Prevented cascading service degradation by engineering a Redis-backed Token Bucket rate limiter and per-service Circuit Breakers with exponential backoff and jitter; validated 1,000 RPS sustained throughput with Prometheus metrics and 5 live Grafana dashboards.
-                </li>
-                <li class="project-desc-item">
-                  Built a React/TypeScript operator dashboard with live traffic simulators and fault injection tools, enabling chaos engineering experiments across network partitions and high-load traffic spikes.
-                </li>
-              </ul>
-            </div>
-
-            <div class="project-tech-stack">
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">Express.js</span>
-              <span class="tech-tag">TypeScript</span>
-              <span class="tech-tag">Nginx</span>
-              <span class="tech-tag">Docker</span>
-              <span class="tech-tag">Redis</span>
-              <span class="tech-tag">PostgreSQL</span>
-              <span class="tech-tag">Prometheus</span>
-              <span class="tech-tag">Grafana</span>
-            </div>
-          </article>
-
-          <!-- Project 2: Shopizer AWS Cloud Deployment -->
-          <article class="project-card" data-category="cloud">
-            <div>
-              <div class="project-card-header">
-                <div>
-                  <div class="project-category-badge">Distributed Systems & Cloud</div>
-                  <h3 class="project-title">Shopizer – Production AWS Multi-Tier Cloud Deployment</h3>
-                </div>
-                <a href="https://github.com/VirajM723/shopizer-aws-deployment" target="_blank" rel="noopener noreferrer" class="project-github-btn" title="View GitHub Repository">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                </a>
-              </div>
-
-              <div class="project-metric-pill-row">
-                <span class="project-metric-item">Availability: <span>99.9% Uptime</span></span>
-                <span class="project-metric-item">•</span>
-                <span class="project-metric-item">Image Size: <span>-65% Reduction</span></span>
-                <span class="project-metric-item">•</span>
-                <span class="project-metric-item">Build Speed: <span>+35% Faster</span></span>
-              </div>
-
-              <ul class="project-desc-list">
-                <li class="project-desc-item">
-                  Containerized an enterprise Java Spring Boot e-commerce monolith into Docker services and deployed on AWS across an Application Load Balancer (ALB) and Multi-AZ RDS MySQL, maintaining 99.9% target-group availability under continuous load tests.
-                </li>
-                <li class="project-desc-item">
-                  Hardened cloud security by replacing static credentials with IAM role-based EC2-to-ECR authentication, isolated VPC subnets, and layered least-privilege Security Groups, reducing attack surface exposure by 60%.
-                </li>
-                <li class="project-desc-item">
-                  Authored multi-stage Dockerfiles (Maven build stage → slim JRE runtime), reducing container image size by 65% and cutting build times by 35%; resolved JDK 17/25 build chain incompatibilities and tuned HikariCP connection pooling for zero bean-wiring errors.
-                </li>
-              </ul>
-            </div>
-
-            <div class="project-tech-stack">
-              <span class="tech-tag">Java</span>
-              <span class="tech-tag">Spring Boot</span>
-              <span class="tech-tag">AWS (EC2, ALB, RDS, ECR, IAM, S3, VPC)</span>
-              <span class="tech-tag">Docker</span>
-              <span class="tech-tag">MySQL</span>
-              <span class="tech-tag">Maven</span>
-            </div>
-          </article>
-
-          <!-- Project 3: Machine Unlearning using SISA Training -->
-          <article class="project-card" data-category="ai">
-            <div>
-              <div class="project-card-header">
-                <div>
-                  <div class="project-category-badge">Applied AI & ML</div>
-                  <h3 class="project-title">Machine Unlearning using SISA Training (MUnL)</h3>
-                </div>
-                <a href="https://github.com/VirajM723/MachineUnlearning" target="_blank" rel="noopener noreferrer" class="project-github-btn" title="View GitHub Repository">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                </a>
-              </div>
-
-              <div class="project-metric-pill-row">
-                <span class="project-metric-item">Compute Cost: <span>-90% Reduction</span></span>
-                <span class="project-metric-item">•</span>
-                <span class="project-metric-item">Retraining Time: <span>-80% Faster</span></span>
-                <span class="project-metric-item">•</span>
-                <span class="project-metric-item">Model Accuracy: <span>95%+ Retained</span></span>
-              </div>
-
-              <ul class="project-desc-list">
-                <li class="project-desc-item">
-                  Implemented SISA (Sharded, Isolated, Sliced, Aggregated) machine unlearning in PyTorch on FNMA loan data, cutting unlearning compute cost by 90% and training time by 80% with 95%+ retained model accuracy.
-                </li>
-                <li class="project-desc-item">
-                  Engineered distributed shard-and-slice isolation pipelines, retraining only affected model slices upon data deletion requests and serializing intermediate checkpoints across storage for full reproducibility.
-                </li>
-                <li class="project-desc-item">
-                  Delivered an interactive production ML dashboard using Streamlit on top of the preprocessing and inference pipeline for on-demand unlearning verification.
-                </li>
-              </ul>
-            </div>
-
-            <div class="project-tech-stack">
-              <span class="tech-tag">PyTorch</span>
-              <span class="tech-tag">Scikit-learn</span>
-              <span class="tech-tag">Streamlit</span>
-              <span class="tech-tag">Model Sharding</span>
-              <span class="tech-tag">Distributed ML</span>
-              <span class="tech-tag">Python</span>
-            </div>
-          </article>
-
-          <!-- Project 4: Safety Gear Detection using Vision Transformer -->
-          <article class="project-card" data-category="ai">
-            <div>
-              <div class="project-card-header">
-                <div>
-                  <div class="project-category-badge">Applied AI & ML</div>
-                  <h3 class="project-title">Safety Gear Detection using Vision Transformer (ViT)</h3>
-                </div>
-                <a href="https://github.com/VirajM723/SafetyDetection" target="_blank" rel="noopener noreferrer" class="project-github-btn" title="View GitHub Repository">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                </a>
-              </div>
-
-              <div class="project-metric-pill-row">
-                <span class="project-metric-item">Test Accuracy: <span>94% (~12% > CNN)</span></span>
-                <span class="project-metric-item">•</span>
-                <span class="project-metric-item">Latency: <span>&lt;200ms per image</span></span>
-                <span class="project-metric-item">•</span>
-                <span class="project-metric-item">Scale: <span>86M Parameters</span></span>
-              </div>
-
-              <ul class="project-desc-list">
-                <li class="project-desc-item">
-                  Fine-tuned an 86M-parameter Vision Transformer on 3,000+ labeled industrial images, achieving ~94% test accuracy (12% gain over baseline CNN architectures) using transfer learning with Cross-Entropy loss and Adam optimizer.
-                </li>
-                <li class="project-desc-item">
-                  Optimized image preprocessing pipelines and inference tensor batching for real-time model serving, achieving sub-200ms latency per image on production GPU inference servers.
-                </li>
-                <li class="project-desc-item">
-                  Deployed an interactive visual evaluation dashboard to track confusion matrices and precision-recall metrics across compliance edge cases.
-                </li>
-              </ul>
-            </div>
-
-            <div class="project-tech-stack">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">PyTorch</span>
-              <span class="tech-tag">TorchVision</span>
-              <span class="tech-tag">Vision Transformers (ViT)</span>
-              <span class="tech-tag">Model Serving</span>
-              <span class="tech-tag">Inference Optimization</span>
-            </div>
-          </article>
-
-          <!-- Project 5: Project Buddy -->
-          <article class="project-card" data-category="fullstack">
-            <div>
-              <div class="project-card-header">
-                <div>
-                  <div class="project-category-badge">Full-Stack & Platforms</div>
-                  <h3 class="project-title">Project Buddy – Real-Time Developer Collaboration</h3>
-                </div>
-                <a href="https://github.com/VirajM723/ProjectBuddy" target="_blank" rel="noopener noreferrer" class="project-github-btn" title="View GitHub Repository">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                </a>
-              </div>
-
-              <div class="project-metric-pill-row">
-                <span class="project-metric-item">Features: <span>12+ Production Modules</span></span>
-                <span class="project-metric-item">•</span>
-                <span class="project-metric-item">Realtime: <span>Native WebSockets</span></span>
-                <span class="project-metric-item">•</span>
-                <span class="project-metric-item">Visuals: <span>D3.js Heatmaps</span></span>
-              </div>
-
-              <ul class="project-desc-list">
-                <li class="project-desc-item">
-                  Shipped an end-to-end developer collaboration platform with 12+ production features, enabling software engineers to discover projects, form distributed teams, and track milestones in real time.
-                </li>
-                <li class="project-desc-item">
-                  Built low-latency persistent multi-user chat and live team activity streams using native WebSockets backed by MongoDB; implemented JWT authentication with bcrypt password hashing and granular role-based access control (RBAC).
-                </li>
-                <li class="project-desc-item">
-                  Engineered interactive GitHub-style contribution heatmaps with D3.js and automated project milestone tracking; hardened all authentication and project routes against abuse with rate limiting via express-rate-limit.
-                </li>
-              </ul>
-            </div>
-
-            <div class="project-tech-stack">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">TypeScript</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">Express.js</span>
-              <span class="tech-tag">MongoDB</span>
-              <span class="tech-tag">WebSockets</span>
-              <span class="tech-tag">D3.js</span>
-              <span class="tech-tag">JWT & RBAC</span>
-              <span class="tech-tag">Docker</span>
-            </div>
-          </article>
-
-          <!-- Project 6: Product Search System -->
-          <article class="project-card" data-category="fullstack">
-            <div>
-              <div class="project-card-header">
-                <div>
-                  <div class="project-category-badge">Full-Stack & Platforms</div>
-                  <h3 class="project-title">Product Search System – E-Commerce Search Platform</h3>
-                </div>
-                <a href="https://github.com/VirajM723/ProductSearchSystem" target="_blank" rel="noopener noreferrer" class="project-github-btn" title="View GitHub Repository">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-                </a>
-              </div>
-
-              <div class="project-metric-pill-row">
-                <span class="project-metric-item">Search: <span>Elasticsearch Engine</span></span>
-                <span class="project-metric-item">•</span>
-                <span class="project-metric-item">Filtering: <span>Faceted Multi-Attribute</span></span>
-                <span class="project-metric-item">•</span>
-                <span class="project-metric-item">Speed: <span>Sub-second Queries</span></span>
-              </div>
-
-              <ul class="project-desc-list">
-                <li class="project-desc-item">
-                  Built a full-stack e-commerce search platform on the MEAN stack, integrating Elasticsearch-powered full-text search, autocomplete, and relevance ranking with faceted multi-attribute filtering on a responsive Angular frontend.
-                </li>
-                <li class="project-desc-item">
-                  Structured a scalable catalog and query layer with MongoDB schemas and an Express/Node.js REST API for sub-second responses; containerized the entire application with Docker for consistent reproducible deployment.
-                </li>
-              </ul>
-            </div>
-
-            <div class="project-tech-stack">
-              <span class="tech-tag">MEAN Stack</span>
-              <span class="tech-tag">MongoDB</span>
-              <span class="tech-tag">Express.js</span>
-              <span class="tech-tag">Angular</span>
-              <span class="tech-tag">Node.js</span>
-              <span class="tech-tag">Elasticsearch</span>
-              <span class="tech-tag">TypeScript</span>
-              <span class="tech-tag">Docker</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         TECHNICAL SKILLS TAXONOMY
-         ======================================================================== -->
-    <section class="skills-section" id="skills">
-      <div class="container">
-        <div class="section-header-centered">
-          <span class="pill-tag-soft section-eyebrow">Technical Competencies</span>
-          <h2 class="display-lg section-title">Skills & Toolchain</h2>
-          <p class="section-desc">
-            A comprehensive overview of programming languages, frameworks, cloud primitives, and telemetry tools I use to build scalable systems.
-          </p>
-        </div>
-
-        <div class="skills-taxonomy-grid">
-          <!-- Category 1: Languages -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-              </div>
-              <h3 class="skill-cat-title">Programming Languages</h3>
-            </div>
-            <div class="skill-pill-cloud">
-              <span class="skill-chip">Python</span>
-              <span class="skill-chip">C</span>
-              <span class="skill-chip">C++</span>
-              <span class="skill-chip">Java</span>
-              <span class="skill-chip">TypeScript</span>
-              <span class="skill-chip">JavaScript</span>
-              <span class="skill-chip">SQL</span>
-              <span class="skill-chip">Bash</span>
-              <span class="skill-chip">HTML/CSS</span>
-            </div>
-          </div>
-
-          <!-- Category 2: Backend & APIs -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-              </div>
-              <h3 class="skill-cat-title">Backend & APIs</h3>
-            </div>
-            <div class="skill-pill-cloud">
-              <span class="skill-chip">FastAPI (Async, Depends, Lifespan)</span>
-              <span class="skill-chip">Asyncio</span>
-              <span class="skill-chip">Node.js</span>
-              <span class="skill-chip">Express.js</span>
-              <span class="skill-chip">Spring Boot</span>
-              <span class="skill-chip">Async SQLAlchemy 2.0</span>
-              <span class="skill-chip">Alembic</span>
-              <span class="skill-chip">Pydantic v2</span>
-              <span class="skill-chip">RESTful APIs</span>
-              <span class="skill-chip">Microservices</span>
-              <span class="skill-chip">WebSockets</span>
-              <span class="skill-chip">JWT & OAuth2/OIDC</span>
-              <span class="skill-chip">RBAC</span>
-            </div>
-          </div>
-
-          <!-- Category 3: Databases & Caching -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-              </div>
-              <h3 class="skill-cat-title">Databases & Caching</h3>
-            </div>
-            <div class="skill-pill-cloud">
-              <span class="skill-chip">PostgreSQL</span>
-              <span class="skill-chip">MySQL</span>
-              <span class="skill-chip">Redis (Cache-Aside, Locks, Streams)</span>
-              <span class="skill-chip">ChromaDB (Vector DB, 5M+ embeddings)</span>
-              <span class="skill-chip">MongoDB</span>
-              <span class="skill-chip">Elasticsearch</span>
-            </div>
-          </div>
-
-          <!-- Category 4: Cloud & Infrastructure -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
-              </div>
-              <h3 class="skill-cat-title">Cloud & Infrastructure</h3>
-            </div>
-            <div class="skill-pill-cloud">
-              <span class="skill-chip">AWS (EC2, ALB, RDS, S3, IAM, VPC, ECR)</span>
-              <span class="skill-chip">Docker</span>
-              <span class="skill-chip">Docker Compose</span>
-              <span class="skill-chip">Kubernetes Fundamentals</span>
-              <span class="skill-chip">Nginx</span>
-              <span class="skill-chip">Linux (Ubuntu, POSIX systems)</span>
-            </div>
-          </div>
-
-          <!-- Category 5: DevOps & Telemetry -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-              </div>
-              <h3 class="skill-cat-title">DevOps & Observability</h3>
-            </div>
-            <div class="skill-pill-cloud">
-              <span class="skill-chip">Prometheus</span>
-              <span class="skill-chip">Grafana</span>
-              <span class="skill-chip">Distributed Tracing (X-Correlation-ID)</span>
-              <span class="skill-chip">GitLab CI/CD</span>
-              <span class="skill-chip">GitHub Actions</span>
-              <span class="skill-chip">Pytest & Pytest-Asyncio</span>
-              <span class="skill-chip">JUnit</span>
-              <span class="skill-chip">Git</span>
-              <span class="skill-chip">Maven</span>
-            </div>
-          </div>
-
-          <!-- Category 6: Applied AI & ML -->
-          <div class="skill-category-card">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"/><circle cx="12" cy="12" r="3"/></svg>
-              </div>
-              <h3 class="skill-cat-title">Applied AI & Machine Learning</h3>
-            </div>
-            <div class="skill-pill-cloud">
-              <span class="skill-chip">PyTorch</span>
-              <span class="skill-chip">TorchVision</span>
-              <span class="skill-chip">Vision Transformers (ViT)</span>
-              <span class="skill-chip">LangChain (Agents & Semantic RAG)</span>
-              <span class="skill-chip">Scikit-learn</span>
-              <span class="skill-chip">SISA Machine Unlearning</span>
-              <span class="skill-chip">NumPy & Pandas</span>
-              <span class="skill-chip">Gradio</span>
-              <span class="skill-chip">Streamlit</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         POSITIONS OF RESPONSIBILITY & LEADERSHIP
-         ======================================================================== -->
-    <section class="leadership-section" id="leadership">
-      <div class="container">
-        <div class="section-header-centered">
-          <span class="pill-tag-soft section-eyebrow">Campus & Professional Leadership</span>
-          <h2 class="display-lg section-title">Positions of Responsibility</h2>
-          <p class="section-desc">
-            Demonstrated initiative in client strategy consulting, product management, and technical communication.
-          </p>
-        </div>
-
-        <div class="leadership-grid">
-          <!-- Role 1: Sigma -->
-          <div class="leadership-card">
-            <div>
-              <h3 class="lead-role-title">Senior Data Analyst</h3>
-              <div class="lead-org">Sigma – The Business Club of NIT Trichy</div>
-              <span class="lead-period tabular-num">Aug. 2024 – May 2026</span>
-
-              <ul class="lead-bullets">
-                <li class="lead-bullet-item">
-                  Delivered data-driven strategic insights across <strong>3+ client consulting projects</strong> in diverse industries, helping organizations make high-confidence decisions based on structured analytics.
-                </li>
-                <li class="lead-bullet-item">
-                  Performed exploratory data analysis (EDA) on datasets of <strong>100K+ records</strong>, uncovering operational trends, anomalies, and underlying root causes.
-                </li>
-                <li class="lead-bullet-item">
-                  Built and deployed predictive machine learning models achieving up to <strong>92% accuracy</strong>, presenting 10+ actionable recommendations that boosted client operational efficiency by <strong>25%</strong> and reduced annual operating costs by up to <strong>10%</strong>.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Role 2: The Product Folks -->
-          <div class="leadership-card">
-            <div>
-              <h3 class="lead-role-title">Product Manager</h3>
-              <div class="lead-org">The Product Folks - NITT</div>
-              <span class="lead-period tabular-num">May 2025 – May 2026</span>
-
-              <ul class="lead-bullets">
-                <li class="lead-bullet-item">
-                  Shipped <strong>5+ product-led projects</strong> end-to-end, from ideation to deployment, driving <strong>1,200 MAU</strong> through structured problem framing, rapid prototyping, and iterative user feedback loops.
-                </li>
-                <li class="lead-bullet-item">
-                  Oversaw digital strategy across LinkedIn and Instagram, refining brand tone and driving <strong>30% higher engagement</strong> through feature-driven content and community sprints.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Role 3: Pragyan -->
-          <div class="leadership-card">
-            <div>
-              <h3 class="lead-role-title">Coordinator, Technical Content Team</h3>
-              <div class="lead-org">Pragyan, NIT Trichy</div>
-              <span class="lead-period tabular-num">Oct. 2024 – May 2026</span>
-
-              <ul class="lead-bullets">
-                <li class="lead-bullet-item">
-                  Served as Technical Content Coordinator for Pragyan ’25, NIT Trichy’s <strong>ISO 9001/20121 certified international techno-managerial fest</strong>, ensuring rigorous technical quality and editorial standards across all festival initiatives.
-                </li>
-                <li class="lead-bullet-item">
-                  Authored <strong>5+ in-depth articles</strong> on emerging technology trends, distributed systems, and software engineering innovations, published across official media channels and acknowledged across global tech communities.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         EDUCATION & EXTRACURRICULAR ACTIVITIES
-         ======================================================================== -->
-    <section class="education-section" id="education">
-      <div class="container">
-        <div class="section-header-centered">
-          <span class="pill-tag-soft section-eyebrow">Academic Background</span>
-          <h2 class="display-lg section-title">Education & Campus Impact</h2>
-          <p class="section-desc">
-            Rigorous foundations in computer systems, algorithms, and continuous academic merit.
-          </p>
-        </div>
-
-        <div class="education-layout-grid">
-          <!-- Left: NIT Trichy Degree -->
-          <div class="edu-main-card">
-            <h3 class="edu-institute-title">National Institute of Technology, Tiruchirappalli</h3>
-            <div class="edu-degree">
-              <strong>Bachelor of Technology in Computer Science and Engineering</strong>
-            </div>
-
-            <div class="edu-badge-row">
-              <span class="pill-tag-soft">NIT Trichy (Tier-1 Institute)</span>
-            </div>
-
-            <div class="edu-coursework-title">Relevant Core Coursework</div>
-            <div class="coursework-chips">
-              <span class="course-chip">Data Structures & Algorithms</span>
-              <span class="course-chip">Operating Systems</span>
-              <span class="course-chip">Computer Networks</span>
-              <span class="course-chip">Database Management Systems</span>
-              <span class="course-chip">Object-Oriented Programming</span>
-              <span class="course-chip">Distributed Systems</span>
-              <span class="course-chip">Software Engineering</span>
-              <span class="course-chip">Artificial Intelligence & Machine Learning</span>
-              <span class="course-chip">Deep Learning</span>
-              <span class="course-chip">Natural Language Processing</span>
-              <span class="course-chip">Computer Organization & Architecture</span>
-              <span class="course-chip">Digital Systems Design</span>
-              <span class="course-chip">Cryptography</span>
-            </div>
-          </div>
-
-          <!-- Right: Extracurricular & Quizzing Achievements -->
-          <div class="extracurricular-card">
-            <div class="extra-item">
-              <div class="extra-badge">Quizzing & Academics</div>
-              <h4 class="extra-title">1st Place – Vortex '25 Main CSE Quiz</h4>
-              <p class="extra-desc">
-                Secured 1st Place at the Main Quiz held during Vortex ’25, the annual Computer Science and Engineering symposium of NIT Trichy, competing against teams nationwide in algorithmic problem solving and systems knowledge.
-              </p>
-            </div>
-
-            <div class="extra-item">
-              <div class="extra-badge">Community Service</div>
-              <h4 class="extra-title">National Service Scheme (NSS-NIT Trichy)</h4>
-              <p class="extra-desc">
-                Actively participated in community outreach programs visiting schools and elder care facilities to assist underprivileged individuals and spread educational awareness and digital literacy.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         WARM CREAM BAND (DESIGN.md card-cream-band #f5e9d4)
-         Stripe Chromatic Interlude
-         ======================================================================== -->
-    <section class="cream-band-section">
-      <div class="container">
-        <div class="cream-band-wrapper">
-          <div>
-            <h2 class="cream-headline">
-              Engineering with clarity, precision, and first principles.
-            </h2>
-            <p class="cream-subtext">
-              Whether architecting high-throughput ASGI microservices, deploying resilient AWS topologies, or indexing millions of vectors for semantic search, I bring uncompromising engineering rigor and ownership to every platform I touch.
+        <div class="hero-body">
+          <!--
+            PROFILE PHOTO
+            Save your photo as assets/images/profile.jpg (portrait, roughly 4:5).
+            It shows up automatically; until then the placeholder below is displayed.
+          -->
+          <figure class="photo">
+            <img src="assets/images/profile.jpg" alt="Viraj Mankani" width="400" height="500" onerror="this.remove()">
+            <figcaption class="photo-empty" aria-hidden="true">
+              <span>VM</span>
+              <small>photo</small>
+            </figcaption>
+          </figure>
+
+          <div class="hero-copy">
+            <p class="hero-lede">
+              Hi, I'm Viraj. I build high-throughput distributed systems and applied AI infrastructure: async backends, low-latency microservices, vector search pipelines and cloud-native setups.
             </p>
-            <div class="cream-cta-group">
-              <a href="mailto:mankaniviraj55@gmail.com" class="button-primary-pill" id="creamContactBtn">
-                Get in Touch
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </a>
-              <button type="button" class="button-secondary" id="creamViewResumeBtn">
-                View & Download Resume
-              </button>
+            <div class="hero-actions">
+              <button type="button" class="btn btn-dark" data-open-docs>Resume &amp; CV</button>
+              <a href="#projects" class="btn btn-line">See projects</a>
             </div>
+            <ul class="hero-meta">
+              <li><a href="mailto:mankaniviraj55@gmail.com">mankaniviraj55@gmail.com</a></li>
+              <li><a href="tel:+918591410685">+91 8591410685</a></li>
+              <li>Mumbai, India</li>
+            </ul>
           </div>
 
-          <div class="cream-stats-aside">
-            <div class="cream-stat-row">
-              <span class="cream-stat-label">Availability</span>
-              <span class="cream-stat-val">Summer/Fall 2027 Roles</span>
+          <div class="hero-side">
+            <ul class="socials" aria-label="Profiles">
+              <li><a href="https://github.com/VirajM723" target="_blank" rel="noopener noreferrer" title="GitHub">GH</a></li>
+              <li><a href="https://www.linkedin.com/in/viraj-mankani-258296260/" target="_blank" rel="noopener noreferrer" title="LinkedIn">IN</a></li>
+              <li><a href="https://leetcode.com/u/viraj_mankani/" target="_blank" rel="noopener noreferrer" title="LeetCode">LC</a></li>
+              <li><a href="https://codeforces.com/profile/mankaniviraj" target="_blank" rel="noopener noreferrer" title="Codeforces">CF</a></li>
+              <li><a href="https://www.geeksforgeeks.org/profile/mankaniv06c9" target="_blank" rel="noopener noreferrer" title="GeeksforGeeks">GFG</a></li>
+            </ul>
+            <p class="big-name">Viraj<br>Mankani</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Numbered track -->
+    <section class="track" aria-label="What I do">
+      <div class="wrap">
+        <ol class="track-list">
+          <li class="track-item">
+            <span class="track-num">1</span>
+            <span class="track-link" aria-hidden="true"></span>
+            <div class="track-text">
+              <h2>I make backends fast under load</h2>
+              <p>30+ async FastAPI endpoints at Tata Communications, p95 latency down from 180ms to 25ms.</p>
             </div>
-            <div class="cream-stat-row">
-              <span class="cream-stat-label">Location Preference</span>
-              <span class="cream-stat-val">Open to On-site, Hybrid and Remote</span>
+          </li>
+          <li class="track-item">
+            <span class="track-num">2</span>
+            <span class="track-link" aria-hidden="true"></span>
+            <div class="track-text">
+              <h2>I put retrieval &amp; ML into production</h2>
+              <p>5M+ embeddings in ChromaDB behind a LangChain RAG pipeline, plus ViT and SISA unlearning projects.</p>
             </div>
-            <div class="cream-stat-row">
-              <span class="cream-stat-label">GitHub Profile</span>
-              <a href="https://github.com/VirajM723" target="_blank" rel="noopener noreferrer" class="link-on-light" style="font-weight: 500;">VirajM723 ↗</a>
+          </li>
+          <li class="track-item">
+            <span class="track-num">3</span>
+            <span class="track-link" aria-hidden="true"></span>
+            <div class="track-text">
+              <h2>I like hard problems</h2>
+              <p>JEE Main AIR 950, MHT-CET State Rank 1, 500+ DSA problems and a 1303 Codeforces peak.</p>
             </div>
-            <div class="cream-stat-row">
-              <span class="cream-stat-label">LinkedIn Profile</span>
-              <a href="https://www.linkedin.com/in/viraj-mankani-258296260/" target="_blank" rel="noopener noreferrer" class="link-on-light" style="font-weight: 500;">viraj-mankani ↗</a>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Metrics -->
+    <section class="section metrics" id="metrics" aria-label="Numbers">
+      <div class="wrap">
+        <div class="metrics-grid">
+          <div class="metric">
+            <p class="label">National standing</p>
+            <p class="metric-num">AIR 950</p>
+            <p class="metric-cap">JEE Main, out of 1.6 million (16 lakh) candidates nationwide.</p>
+          </div>
+          <div class="metric">
+            <p class="label">State rank</p>
+            <p class="metric-num">Rank 1</p>
+            <p class="metric-cap">MHT-CET, State Rank 1 across Maharashtra.</p>
+          </div>
+          <div class="metric">
+            <p class="label">Throughput</p>
+            <p class="metric-num">1,000<small>RPS</small></p>
+            <p class="metric-cap">Sustained on the NginZ API gateway with Redis token-bucket rate limiting.</p>
+          </div>
+          <div class="metric">
+            <p class="label">Response time</p>
+            <p class="metric-num">25<small>ms</small></p>
+            <p class="metric-cap">p95 at Tata Communications via multi-tier Redis cache-aside (was 180ms).</p>
+          </div>
+          <div class="metric">
+            <p class="label">Vector scale</p>
+            <p class="metric-num">5M+</p>
+            <p class="metric-cap">ChromaDB embeddings indexed for RAG retrieval at Lyceum Development Centre.</p>
+          </div>
+          <div class="metric">
+            <p class="label">Problem solving</p>
+            <p class="metric-num">500+<small>DSA</small></p>
+            <p class="metric-cap">Solved across LeetCode &amp; GFG; 1303 peak rating on Codeforces.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="wrap split">
+        <div class="split-side">
+          <p class="label">Where I've worked</p>
+          <span class="tag-line">Experience</span>
+        </div>
+
+        <div class="split-main stack">
+          <article class="job job-purple reveal">
+            <header class="job-head">
+              <div class="job-org">
+                <span class="job-mark">TC</span>
+                <h3>Tata Communications</h3>
+              </div>
+              <span class="job-date">May – Jul 2026</span>
+            </header>
+            <p class="job-role">Project Trainee, Software Engineering <span>Backend &amp; Cloud Infrastructure · Mumbai</span></p>
+            <hr>
+            <ul class="job-points">
+              <li><strong>High-throughput enterprise backend.</strong> Architected an asynchronous core backend platform in Python and FastAPI using non-blocking event loops, dependency injection (<code>Depends</code>), and Pydantic v2 data contracts; engineered Async SQLAlchemy 2.0 connection pooling and PostgreSQL schema design across 30+ async REST APIs, powering central auth (OAuth2/OIDC SSO) and resource coordination across 8 internal applications for 100+ daily enterprise users.</li>
+              <li><strong>Distributed event processing, caching &amp; idempotency.</strong> Built an async distributed event and background-task engine on Redis and asyncio with distributed locks, idempotency keys, dead-letter queues and exponential-backoff retries; added a multi-tier Redis cache-aside layer with selective TTL invalidation, cutting database query load by 60% and p95 latency from 180ms to 25ms.</li>
+              <li><strong>ASGI middleware, observability &amp; CI/CD.</strong> Wrote custom FastAPI ASGI middleware for <code>X-Correlation-ID</code> request tracing, token-bucket tenant rate limiting and structured JSON telemetry wired into Prometheus and Grafana; authored zero-downtime async Alembic migrations and a pytest-asyncio suite at 92% coverage on GitLab CI/CD.</li>
+            </ul>
+            <ul class="chips chips-light">
+              <li>FastAPI</li><li>Python</li><li>Asyncio</li><li>Redis</li><li>PostgreSQL</li><li>Async SQLAlchemy 2.0</li><li>Alembic</li><li>Prometheus &amp; Grafana</li><li>GitLab CI/CD</li><li>Pytest-Asyncio</li>
+            </ul>
+            <a class="btn btn-ghost-light" href="https://drive.google.com/file/d/1CmJV75EqSHUkfnQb5CkXrf2AnQKfeOMx/view?usp=sharing" target="_blank" rel="noopener noreferrer">View certificate</a>
+          </article>
+
+          <article class="job job-black reveal">
+            <header class="job-head">
+              <div class="job-org">
+                <span class="job-mark">LD</span>
+                <h3>Lyceum Development Centre</h3>
+              </div>
+              <span class="job-date">May – Jul 2025</span>
+            </header>
+            <p class="job-role">Machine Learning Intern <span>Applied AI, RAG &amp; Vector Systems · Chennai</span></p>
+            <hr>
+            <ul class="job-points">
+              <li><strong>RFP parsing &amp; document ingestion.</strong> Built automated regex-based extraction pipelines in Python that turn 300+ multi-page enterprise RFP documents a month into structured JSON, removing 80% of the manual proposal processing work.</li>
+              <li><strong>Vector database &amp; semantic retrieval.</strong> Set up and scaled ChromaDB holding 5M+ text embeddings behind a LangChain RAG pipeline over historical pricing and occupancy data, improving predictive accuracy by 20% and cutting document processing latency 6x.</li>
+              <li><strong>LLM-powered RAG application.</strong> Deployed a production FAQ search service over 1,800+ question-answer pairs with LangChain and transformer embeddings, holding sub-3s query latency at 95% retrieval precision, and shipped a Gradio dashboard that cut client turnaround from 3 hours to 30 minutes.</li>
+            </ul>
+            <ul class="chips chips-light">
+              <li>ChromaDB</li><li>LangChain</li><li>RAG</li><li>Transformers</li><li>Python</li><li>Gradio</li><li>Vector Search</li><li>Document ETL</li>
+            </ul>
+            <a class="btn btn-ghost-light" href="https://drive.google.com/file/d/1U083nkmuZIxC8eGDRBNmCt7wjAFwEcvc/view?usp=sharing" target="_blank" rel="noopener noreferrer">View certificate</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honors -->
+    <section class="section" id="honors">
+      <div class="wrap split">
+        <div class="split-side">
+          <p class="label">Ranks, awards and a few<br>numbers I'm (quietly) proud of</p>
+        </div>
+        <ul class="split-main awards">
+          <li class="reveal"><span class="award-key">JEE Main</span><p class="award-title">All India Rank 950</p><p class="award-note">Top 0.06% of 1.6 million candidates.</p></li>
+          <li class="reveal"><span class="award-key">MHT-CET</span><p class="award-title">State Rank 1, Maharashtra</p></li>
+          <li class="reveal"><span class="award-key">Vortex '25</span><p class="award-title">1st Place, Main CSE Quiz</p><p class="award-note">Annual CSE symposium of NIT Trichy.</p></li>
+          <li class="reveal"><span class="award-key">Codeforces · LeetCode · GFG</span><p class="award-title">1303 peak, 500+ solved</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="label">Things I've built</p>
+            <h2 class="section-title">Projects</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All <sup>6</sup></button>
+            <button type="button" class="filter" data-filter="cloud" aria-pressed="false">Systems &amp; Cloud <sup>2</sup></button>
+            <button type="button" class="filter" data-filter="ai" aria-pressed="false">AI &amp; ML <sup>2</sup></button>
+            <button type="button" class="filter" data-filter="fullstack" aria-pressed="false">Full-Stack <sup>2</sup></button>
+          </div>
+        </div>
+
+        <div class="projects">
+
+          <article class="project reveal" data-category="cloud">
+            <a class="project-cover cover-purple" href="https://github.com/VirajM723/Nginz-API-Gateway" target="_blank" rel="noopener noreferrer">
+              <span class="cover-top"><span>Distributed Systems &amp; Cloud</span><span>01</span></span>
+              <span class="cover-stat">1,000 <small>RPS</small></span>
+              <span class="cover-title">NginZ, a distributed cloud-native API gateway <i class="arrow" aria-hidden="true"></i></span>
+            </a>
+            <div class="project-body">
+              <p class="project-facts">10 Docker instances · zero-downtime JWT · 5 Grafana dashboards</p>
+              <ul class="project-points">
+                <li>Architected a distributed cloud-native API gateway on Nginx and Node.js/Express, coordinating 10 Dockerized instances with Redis-backed service discovery, SIGTERM graceful deregistration, and zero downtime during simulated central auth outages via local JWT validation.</li>
+                <li>Prevented cascading failures with a Redis-backed token-bucket rate limiter and per-service circuit breakers with exponential backoff and jitter; validated 1,000 RPS sustained throughput with Prometheus metrics and 5 live Grafana dashboards.</li>
+                <li>Built a React/TypeScript operator dashboard with live traffic simulators and fault injection tools for chaos experiments across network partitions and load spikes.</li>
+              </ul>
+              <ul class="chips"><li>Node.js</li><li>Express.js</li><li>TypeScript</li><li>Nginx</li><li>Docker</li><li>Redis</li><li>PostgreSQL</li><li>Prometheus</li><li>Grafana</li></ul>
             </div>
-            <div class="cream-stat-row">
-              <span class="cream-stat-label">Codeforces Handle</span>
-              <a href="https://codeforces.com/profile/mankaniviraj" target="_blank" class="link-on-light" style="font-weight: 500;">mankaniviraj ↗</a>
+          </article>
+
+          <article class="project reveal" data-category="cloud">
+            <a class="project-cover cover-black" href="https://github.com/VirajM723/shopizer-aws-deployment" target="_blank" rel="noopener noreferrer">
+              <span class="cover-top"><span>Distributed Systems &amp; Cloud</span><span>02</span></span>
+              <span class="cover-stat">99.9<small>% uptime</small></span>
+              <span class="cover-title">Shopizer, a production AWS multi-tier deployment <i class="arrow" aria-hidden="true"></i></span>
+            </a>
+            <div class="project-body">
+              <p class="project-facts">Image size −65% · builds 35% faster · attack surface −60%</p>
+              <ul class="project-points">
+                <li>Containerized an enterprise Java Spring Boot e-commerce monolith into Docker services and deployed it on AWS behind an Application Load Balancer with Multi-AZ RDS MySQL, holding 99.9% target-group availability under continuous load tests.</li>
+                <li>Replaced static credentials with IAM role-based EC2-to-ECR authentication, isolated VPC subnets and least-privilege Security Groups, reducing attack surface exposure by 60%.</li>
+                <li>Wrote multi-stage Dockerfiles (Maven build stage to slim JRE runtime), cutting image size by 65% and build time by 35%; fixed JDK 17/25 build chain issues and tuned HikariCP pooling for zero bean-wiring errors.</li>
+              </ul>
+              <ul class="chips"><li>Java</li><li>Spring Boot</li><li>AWS (EC2, ALB, RDS, ECR, IAM, S3, VPC)</li><li>Docker</li><li>MySQL</li><li>Maven</li></ul>
             </div>
-            <div class="cream-stat-row">
-              <span class="cream-stat-label">LeetCode Profile</span>
-              <a href="https://leetcode.com/u/viraj_mankani/" target="_blank" class="link-on-light" style="font-weight: 500;">viraj_mankani ↗</a>
+          </article>
+
+          <article class="project reveal" data-category="ai">
+            <a class="project-cover cover-black" href="https://github.com/VirajM723/MachineUnlearning" target="_blank" rel="noopener noreferrer">
+              <span class="cover-top"><span>Applied AI &amp; ML</span><span>03</span></span>
+              <span class="cover-stat">−90<small>% compute</small></span>
+              <span class="cover-title">Machine unlearning with SISA training (MUnL) <i class="arrow" aria-hidden="true"></i></span>
+            </a>
+            <div class="project-body">
+              <p class="project-facts">Retraining −80% · 95%+ accuracy retained</p>
+              <ul class="project-points">
+                <li>Implemented SISA (Sharded, Isolated, Sliced, Aggregated) machine unlearning in PyTorch on FNMA loan data, cutting unlearning compute cost by 90% and training time by 80% while keeping 95%+ model accuracy.</li>
+                <li>Built shard-and-slice isolation pipelines that retrain only the affected slices on a deletion request, with intermediate checkpoints serialized to storage for full reproducibility.</li>
+                <li>Put a Streamlit dashboard on top of the preprocessing and inference pipeline for on-demand unlearning verification.</li>
+              </ul>
+              <ul class="chips"><li>PyTorch</li><li>Scikit-learn</li><li>Streamlit</li><li>Model Sharding</li><li>Distributed ML</li><li>Python</li></ul>
             </div>
-            <div class="cream-stat-row">
-              <span class="cream-stat-label">GeeksforGeeks</span>
-              <a href="https://www.geeksforgeeks.org/profile/mankaniv06c9" target="_blank" class="link-on-light" style="font-weight: 500;">mankaniv06c9 ↗</a>
+          </article>
+
+          <article class="project reveal" data-category="ai">
+            <a class="project-cover cover-purple" href="https://github.com/VirajM723/SafetyDetection" target="_blank" rel="noopener noreferrer">
+              <span class="cover-top"><span>Applied AI &amp; ML</span><span>04</span></span>
+              <span class="cover-stat">94<small>% accuracy</small></span>
+              <span class="cover-title">Safety gear detection with a Vision Transformer <i class="arrow" aria-hidden="true"></i></span>
+            </a>
+            <div class="project-body">
+              <p class="project-facts">86M parameters · &lt;200ms per image · ~12% over CNN baseline</p>
+              <ul class="project-points">
+                <li>Fine-tuned an 86M-parameter Vision Transformer on 3,000+ labeled industrial images to ~94% test accuracy, about 12% above baseline CNNs, using transfer learning with cross-entropy loss and Adam.</li>
+                <li>Optimized preprocessing and inference batching for real-time serving at under 200ms per image on GPU inference servers.</li>
+                <li>Shipped a visual evaluation dashboard tracking confusion matrices and precision-recall across compliance edge cases.</li>
+              </ul>
+              <ul class="chips"><li>Python</li><li>PyTorch</li><li>TorchVision</li><li>Vision Transformers (ViT)</li><li>Model Serving</li><li>Inference Optimization</li></ul>
             </div>
+          </article>
+
+          <article class="project reveal" data-category="fullstack">
+            <a class="project-cover cover-purple" href="https://github.com/VirajM723/ProjectBuddy" target="_blank" rel="noopener noreferrer">
+              <span class="cover-top"><span>Full-Stack &amp; Platforms</span><span>05</span></span>
+              <span class="cover-stat">12+ <small>modules</small></span>
+              <span class="cover-title">Project Buddy, real-time developer collaboration <i class="arrow" aria-hidden="true"></i></span>
+            </a>
+            <div class="project-body">
+              <p class="project-facts">Native WebSockets · D3.js heatmaps · JWT &amp; RBAC</p>
+              <ul class="project-points">
+                <li>Shipped an end-to-end collaboration platform with 12+ production features where developers discover projects, form teams and track milestones in real time.</li>
+                <li>Built persistent multi-user chat and live team activity streams on native WebSockets backed by MongoDB; added JWT auth with bcrypt hashing and role-based access control.</li>
+                <li>Made GitHub-style contribution heatmaps with D3.js and automated milestone tracking; rate-limited auth and project routes with express-rate-limit.</li>
+              </ul>
+              <ul class="chips"><li>React</li><li>TypeScript</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>WebSockets</li><li>D3.js</li><li>JWT &amp; RBAC</li><li>Docker</li></ul>
+            </div>
+          </article>
+
+          <article class="project reveal" data-category="fullstack">
+            <a class="project-cover cover-black" href="https://github.com/VirajM723/ProductSearchSystem" target="_blank" rel="noopener noreferrer">
+              <span class="cover-top"><span>Full-Stack &amp; Platforms</span><span>06</span></span>
+              <span class="cover-stat">&lt;1<small>s queries</small></span>
+              <span class="cover-title">Product Search System for e-commerce <i class="arrow" aria-hidden="true"></i></span>
+            </a>
+            <div class="project-body">
+              <p class="project-facts">Elasticsearch · faceted multi-attribute filters · autocomplete</p>
+              <ul class="project-points">
+                <li>Built a full-stack e-commerce search platform on the MEAN stack with Elasticsearch full-text search, autocomplete and relevance ranking, plus faceted multi-attribute filtering in a responsive Angular frontend.</li>
+                <li>Designed the catalog and query layer with MongoDB schemas and an Express/Node.js REST API for sub-second responses; containerized everything with Docker for reproducible deploys.</li>
+              </ul>
+              <ul class="chips"><li>MEAN Stack</li><li>MongoDB</li><li>Express.js</li><li>Angular</li><li>Node.js</li><li>Elasticsearch</li><li>TypeScript</li><li>Docker</li></ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="label">Toolbox</p>
+            <h2 class="section-title">Skills</h2>
+          </div>
+        </div>
+
+        <dl class="skills">
+          <div class="skill-row reveal">
+            <dt><span>01</span>Languages</dt>
+            <dd><ul class="chips"><li>Python</li><li>C</li><li>C++</li><li>Java</li><li>TypeScript</li><li>JavaScript</li><li>SQL</li><li>Bash</li><li>HTML/CSS</li></ul></dd>
+          </div>
+          <div class="skill-row reveal">
+            <dt><span>02</span>Backend &amp; APIs</dt>
+            <dd><ul class="chips"><li>FastAPI (Async, Depends, Lifespan)</li><li>Asyncio</li><li>Node.js</li><li>Express.js</li><li>Spring Boot</li><li>Async SQLAlchemy 2.0</li><li>Alembic</li><li>Pydantic v2</li><li>RESTful APIs</li><li>Microservices</li><li>WebSockets</li><li>JWT &amp; OAuth2/OIDC</li><li>RBAC</li></ul></dd>
+          </div>
+          <div class="skill-row reveal">
+            <dt><span>03</span>Databases &amp; Caching</dt>
+            <dd><ul class="chips"><li>PostgreSQL</li><li>MySQL</li><li>Redis (Cache-Aside, Locks, Streams)</li><li>ChromaDB (Vector DB)</li><li>MongoDB</li><li>Elasticsearch</li></ul></dd>
+          </div>
+          <div class="skill-row reveal">
+            <dt><span>04</span>Cloud &amp; Infrastructure</dt>
+            <dd><ul class="chips"><li>AWS (EC2, ALB, RDS, S3, IAM, VPC, ECR)</li><li>Docker</li><li>Docker Compose</li><li>Kubernetes Fundamentals</li><li>Nginx</li><li>Linux (Ubuntu, POSIX)</li></ul></dd>
+          </div>
+          <div class="skill-row reveal">
+            <dt><span>05</span>DevOps &amp; Observability</dt>
+            <dd><ul class="chips"><li>Prometheus</li><li>Grafana</li><li>Distributed Tracing (X-Correlation-ID)</li><li>GitLab CI/CD</li><li>GitHub Actions</li><li>Pytest &amp; Pytest-Asyncio</li><li>JUnit</li><li>Git</li><li>Maven</li></ul></dd>
+          </div>
+          <div class="skill-row reveal">
+            <dt><span>06</span>Applied AI &amp; ML</dt>
+            <dd><ul class="chips"><li>PyTorch</li><li>TorchVision</li><li>Vision Transformers (ViT)</li><li>LangChain (Agents &amp; RAG)</li><li>Scikit-learn</li><li>SISA Machine Unlearning</li><li>NumPy &amp; Pandas</li><li>Gradio</li><li>Streamlit</li></ul></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- About: leadership + education -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="label">Outside of shipping code</p>
+            <h2 class="section-title">Leadership</h2>
+          </div>
+        </div>
+
+        <div class="roles" id="leadership">
+          <article class="role reveal">
+            <p class="role-date">Aug 2024 – May 2026</p>
+            <div>
+              <h3>Senior Data Analyst</h3>
+              <p class="role-org">Sigma, the Business Club of NIT Trichy</p>
+              <ul class="role-points">
+                <li>Delivered data-driven insights across 3+ client consulting projects in different industries.</li>
+                <li>Ran exploratory analysis on datasets of 100K+ records to surface operational trends, anomalies and root causes.</li>
+                <li>Built predictive ML models at up to 92% accuracy and presented 10+ recommendations that raised client operational efficiency by 25% and cut annual operating costs by up to 10%.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="role reveal">
+            <p class="role-date">May 2025 – May 2026</p>
+            <div>
+              <h3>Product Manager</h3>
+              <p class="role-org">The Product Folks, NITT</p>
+              <ul class="role-points">
+                <li>Shipped 5+ product-led projects from idea to deployment, reaching 1,200 MAU through problem framing, quick prototypes and user feedback loops.</li>
+                <li>Ran digital strategy on LinkedIn and Instagram, reworking brand tone and lifting engagement by 30% with feature-driven content and community sprints.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="role reveal">
+            <p class="role-date">Oct 2024 – May 2026</p>
+            <div>
+              <h3>Coordinator, Technical Content Team</h3>
+              <p class="role-org">Pragyan, NIT Trichy</p>
+              <ul class="role-points">
+                <li>Technical Content Coordinator for Pragyan '25, NIT Trichy's ISO 9001/20121 certified international techno-managerial fest, responsible for technical quality and editorial standards.</li>
+                <li>Wrote 5+ in-depth articles on emerging tech, distributed systems and software engineering, published across the fest's official channels.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="edu" id="education">
+          <article class="edu-main reveal">
+            <p class="label">Education</p>
+            <h3>National Institute of Technology, Tiruchirappalli</h3>
+            <p class="edu-degree">B.Tech, Computer Science and Engineering · Class of 2027</p>
+            <p class="label edu-sub">Coursework</p>
+            <ul class="chips">
+              <li>Data Structures &amp; Algorithms</li><li>Operating Systems</li><li>Computer Networks</li><li>Database Management Systems</li><li>Object-Oriented Programming</li><li>Distributed Systems</li><li>Software Engineering</li><li>AI &amp; Machine Learning</li><li>Deep Learning</li><li>Natural Language Processing</li><li>Computer Organization &amp; Architecture</li><li>Digital Systems Design</li><li>Cryptography</li>
+            </ul>
+          </article>
+
+          <div class="edu-extra">
+            <article class="extra reveal">
+              <p class="label">Quizzing</p>
+              <h4>1st Place, Vortex '25 Main CSE Quiz</h4>
+              <p>Won the main quiz at Vortex '25, NIT Trichy's annual CSE symposium, against teams from across the country on algorithms and systems.</p>
+            </article>
+            <article class="extra reveal">
+              <p class="label">Community</p>
+              <h4>National Service Scheme, NIT Trichy</h4>
+              <p>Part of NSS outreach visiting schools and elder care homes, helping with education and digital literacy.</p>
+            </article>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ========================================================================
-       FOOTER (DESIGN.md footer-light)
-       ======================================================================== -->
-  <footer class="site-footer">
-    <div class="container">
+  <!-- Contact / footer -->
+  <footer class="footer" id="contact">
+    <div class="wrap">
+      <p class="footer-kicker">Viraj Mankani</p>
+
+      <div class="footer-cta">
+        <h2 class="footer-statement">Good systems are <span class="accent">boring in production.</span> That's what I aim for.</h2>
+        <a class="talk" id="talkBtn" href="mailto:mankaniviraj55@gmail.com"><span>Let's talk</span></a>
+      </div>
+
+      <p class="footer-intro">Async microservices, AWS setups, or a few million vectors that need to be searchable: I like owning the whole thing, from schema to dashboards. Currently looking for Summer/Fall 2027 roles.</p>
+
       <div class="footer-grid">
-        <!-- Col 1: Brand & Contact -->
-        <div>
-          <div class="footer-brand-title">Viraj Mankani</div>
-          <p class="footer-brand-desc">
-            Computer Science & Engineering undergraduate at NIT Trichy. Architecting scalable backends, cloud-native gateways, and applied AI systems.
-          </p>
-          <div style="display: flex; flex-direction: column; gap: 6px; font-size: 13px;">
-            <span><strong>Email:</strong> <a href="mailto:mankaniviraj55@gmail.com" class="link-on-light">mankaniviraj55@gmail.com</a></span>
-            <span><strong>Phone:</strong> <a href="tel:+918591410685" class="link-on-light">+91 8591410685</a></span>
-            <span><strong>Location:</strong> Mumbai, India</span>
-          </div>
-        </div>
+        <dl class="footer-facts">
+          <div><dt>Availability</dt><dd>Summer/Fall 2027 roles</dd></div>
+          <div><dt>Work mode</dt><dd>On-site, hybrid or remote</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:mankaniviraj55@gmail.com">mankaniviraj55@gmail.com</a></dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+918591410685">+91 8591410685</a></dd></div>
+          <div><dt>Based in</dt><dd>Mumbai, India</dd></div>
+        </dl>
 
-        <!-- Col 2: Site Index -->
         <div>
-          <div class="footer-col-title">Navigation</div>
-          <ul class="footer-links-list">
-            <li><a href="#overview" class="footer-link">Overview</a></li>
-            <li><a href="#metrics" class="footer-link">Honors & Metrics</a></li>
-            <li><a href="#experience" class="footer-link">Work Experience</a></li>
-            <li><a href="#projects" class="footer-link">Technical Projects</a></li>
-            <li><a href="#skills" class="footer-link">Skills & Stack</a></li>
-            <li><a href="#leadership" class="footer-link">Leadership Roles</a></li>
-            <li><a href="#education" class="footer-link">Education</a></li>
+          <p class="footer-col">Profiles</p>
+          <ul class="footer-links">
+            <li><a href="https://github.com/VirajM723" target="_blank" rel="noopener noreferrer">GitHub <span>VirajM723</span></a></li>
+            <li><a href="https://www.linkedin.com/in/viraj-mankani-258296260/" target="_blank" rel="noopener noreferrer">LinkedIn <span>viraj-mankani</span></a></li>
+            <li><a href="https://leetcode.com/u/viraj_mankani/" target="_blank" rel="noopener noreferrer">LeetCode <span>viraj_mankani</span></a></li>
+            <li><a href="https://codeforces.com/profile/mankaniviraj" target="_blank" rel="noopener noreferrer">Codeforces <span>mankaniviraj</span></a></li>
+            <li><a href="https://www.geeksforgeeks.org/profile/mankaniv06c9" target="_blank" rel="noopener noreferrer">GeeksforGeeks <span>mankaniv06c9</span></a></li>
           </ul>
         </div>
 
-        <!-- Col 3: Coding & Professional Profiles -->
         <div>
-          <div class="footer-col-title">Profiles & Social</div>
-          <ul class="footer-links-list">
-            <li><a href="https://github.com/VirajM723" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub (VirajM723) ↗</a></li>
-            <li><a href="https://www.linkedin.com/in/viraj-mankani-258296260/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn ↗</a></li>
-            <li><a href="https://leetcode.com/u/viraj_mankani/" target="_blank" rel="noopener noreferrer" class="footer-link">LeetCode (500+ DSA) ↗</a></li>
-            <li><a href="https://codeforces.com/profile/mankaniviraj" target="_blank" rel="noopener noreferrer" class="footer-link">Codeforces (1303 Peak) ↗</a></li>
-            <li><a href="https://www.geeksforgeeks.org/profile/mankaniv06c9" target="_blank" rel="noopener noreferrer" class="footer-link">GeeksforGeeks ↗</a></li>
+          <p class="footer-col">Documents</p>
+          <ul class="footer-links">
+            <li><a href="virajMankaniResume.pdf" target="_blank" rel="noopener">Resume <span>PDF</span></a></li>
+            <li><a href="virajMankaniCV.pdf" target="_blank" rel="noopener">CV <span>PDF</span></a></li>
+            <li><a href="https://drive.google.com/file/d/1CmJV75EqSHUkfnQb5CkXrf2AnQKfeOMx/view?usp=sharing" target="_blank" rel="noopener noreferrer">Tata Communications <span>certificate</span></a></li>
+            <li><a href="https://drive.google.com/file/d/1U083nkmuZIxC8eGDRBNmCt7wjAFwEcvc/view?usp=sharing" target="_blank" rel="noopener noreferrer">Lyceum Development Centre <span>certificate</span></a></li>
           </ul>
         </div>
 
-        <!-- Col 4: Documents -->
         <div>
-          <div class="footer-col-title">Documents</div>
-          <ul class="footer-links-list">
-            <li><a href="virajMankaniResume.pdf" target="_blank" class="footer-link">Resume (PDF) ↗</a></li>
-            <li><a href="virajMankaniCV.pdf" target="_blank" class="footer-link">CV (PDF) ↗</a></li>
-            <li><a href="https://drive.google.com/file/d/1CmJV75EqSHUkfnQb5CkXrf2AnQKfeOMx/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="footer-link">Tata Communications ↗</a></li>
-            <li><a href="https://drive.google.com/file/d/1U083nkmuZIxC8eGDRBNmCt7wjAFwEcvc/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="footer-link">Lyceum Development Centre ↗</a></li>
+          <p class="footer-col">Sections</p>
+          <ul class="footer-links">
+            <li><a href="#top">Overview</a></li>
+            <li><a href="#metrics">Numbers</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">Leadership &amp; Education</a></li>
           </ul>
         </div>
       </div>
 
-      <div class="footer-bottom-bar">
-        <div>
-          © 2026 Viraj Mankani. Designed with inspiration from Stripe's design language.
-        </div>
-        <div class="footer-status-tag">
-          <span class="status-dot"></span> All systems operational • Open to Opportunities
-        </div>
+      <div class="footer-bottom">
+        <p>© 2026 Viraj Mankani</p>
+        <p><span class="dot" aria-hidden="true"></span> Open to opportunities</p>
       </div>
     </div>
   </footer>
 
-  <!-- ========================================================================
-       RESUME & CV INTERACTIVE PREVIEW MODAL
-       ======================================================================== -->
-  <div class="modal-overlay" id="resumeModal" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
-    <div class="modal-container">
-      <div class="modal-header">
-        <h3 class="modal-title" id="resumeModalTitle">Resume & CV</h3>
-        <button type="button" class="modal-close-btn" id="closeResumeModalBtn" aria-label="Close modal">&times;</button>
+  <!-- Resume & CV dialog -->
+  <dialog class="docs" id="docsDialog" aria-labelledby="docsTitle">
+    <div class="docs-head">
+      <h2 id="docsTitle">Resume &amp; CV</h2>
+      <button type="button" class="docs-close" data-close-docs aria-label="Close">
+        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" aria-hidden="true"><path d="M15.8 15.2a1 1 0 0 1-1.4 0L1.3 2A1 1 0 1 1 2.7.6l13.1 13.1a1 1 0 0 1 0 1.5Z" fill="currentColor"/><path d="M1.3 15.2a1 1 0 0 0 1.4 0L15.8 2A1 1 0 1 0 14.4.6L1.3 13.7a1 1 0 0 0 0 1.5Z" fill="currentColor"/></svg>
+      </button>
+    </div>
+    <div class="docs-grid">
+      <div class="doc">
+        <p class="label">One page</p>
+        <h3>Resume</h3>
+        <div class="doc-actions">
+          <a href="virajMankaniResume.pdf" download="virajMankaniResume.pdf" class="btn btn-dark">Download</a>
+          <a href="virajMankaniResume.pdf" target="_blank" rel="noopener" class="btn btn-line">Open</a>
+        </div>
       </div>
-
-      <div class="modal-content-body">
-        <div class="resume-choice-grid">
-          <!-- Option 1: Explore Resume -->
-          <div class="resume-choice-card">
-            <h4>Explore Resume</h4>
-            <div style="display: flex; gap: 10px; margin-top: 16px;">
-              <a href="virajMankaniResume.pdf" download="virajMankaniResume.pdf" class="button-primary-pill" style="font-size: 14px;">
-                Download
-              </a>
-              <a href="virajMankaniResume.pdf" target="_blank" rel="noopener noreferrer" class="button-secondary" style="font-size: 14px;">
-                Preview
-              </a>
-            </div>
-          </div>
-
-          <!-- Option 2: Explore CV -->
-          <div class="resume-choice-card">
-            <h4>Explore CV</h4>
-            <div style="display: flex; gap: 10px; margin-top: 16px;">
-              <a href="virajMankaniCV.pdf" download="virajMankaniCV.pdf" class="button-primary-pill" style="font-size: 14px;">
-                Download
-              </a>
-              <a href="virajMankaniCV.pdf" target="_blank" rel="noopener noreferrer" class="button-secondary" style="font-size: 14px;">
-                Preview
-              </a>
-            </div>
-          </div>
+      <div class="doc">
+        <p class="label">Full detail</p>
+        <h3>CV</h3>
+        <div class="doc-actions">
+          <a href="virajMankaniCV.pdf" download="virajMankaniCV.pdf" class="btn btn-dark">Download</a>
+          <a href="virajMankaniCV.pdf" target="_blank" rel="noopener" class="btn btn-line">Open</a>
         </div>
       </div>
     </div>
-  </div>
+  </dialog>
 
-  <!-- Scripts -->
   <script src="app.js"></script>
 </body>
 </html>
